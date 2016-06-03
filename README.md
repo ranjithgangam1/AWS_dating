@@ -18,11 +18,6 @@ Pub Nub --> This service is used implementing chat system.
 
 Amazon SNS --> This service is used to send notification service.
 
-##Architecture
-Click below link to view the architecture of the project
-
-https://github.uc.edu/raw/bollara/p2dating/master/static/arch.PNG?token=AAAH_eCSxQBvaRxsaKvQKyUME84A70EJks5W9chSwA%3D%3D
-
 ##Future Scope: 
 
 Most of the below services are almost implemented as libraries and need some adjustments to make it work effectively.
