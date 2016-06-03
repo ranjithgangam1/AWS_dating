@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dateApp</title>
+
+    <link rel="stylesheet" type=text/css href="{{ url_for('static',filename='css/style.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+
+        <p id="demo"></p>
+
+        <h1>Hi {{ user_data.uname }}</h1>
+
+        <p> Below are some of {{ user_data.interestedIn}}'s you might be interested in </p>
+
+        {% for like_user in interested_users %}
+        <p>{{ like_user.uname }} <input type="button" name="chat" value="chat"/></p>
+        <div class="chat_box">
+            <div class="chat_header">date chat <div class="chat_close_button">X</div>
+            </div>
+            <div class="chat_body">
+                <div class="user1">{{ like_user.uname }}</div>
+            </div>
+            </div>
+        {% endfor %}
+
+        {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+    </div>
+
+</body>
+</html>
